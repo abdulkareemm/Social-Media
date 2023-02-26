@@ -6,7 +6,10 @@ const FollwersCard = () => {
     <div className="w-full rounded-[0.7rem] gap-[1rem] flex flex-col text-[13px]">
       <h3>Who is follwing you</h3>
       {Followers.map((follower) => (
-        <div key={follower.id} className="flex justify-between gap-[10px] items-center">
+        <div
+          key={follower.id}
+          className="flex justify-between gap-[10px] items-center"
+        >
           <div className="flex flex-row gap-[10px]">
             <img
               src={follower.img}
