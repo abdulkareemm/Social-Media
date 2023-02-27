@@ -1,5 +1,5 @@
 import React from "react";
-import { Followers } from "../../data/follwersData";
+import { Followers } from "../../../data/follwersData";
 
 const FollwersCard = () => {
   return (

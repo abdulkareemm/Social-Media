@@ -1,5 +1,5 @@
 import React from 'react'
-import {PostsData} from "../../data/PostsData"
+import {PostsData} from "../../../data/PostsData"
 import Post from './Post'
 
 const Posts = () => {

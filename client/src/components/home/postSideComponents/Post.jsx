@@ -1,8 +1,8 @@
 import React from "react";
-import Commet from "../../img/comment.png";
-import Share from "../../img/share.png";
-import Heart from "../../img/like.png";
-import NotLike from "../../img/notlike.png";
+import Commet from "../../../img/comment.png";
+import Share from "../../../img/share.png";
+import Heart from "../../../img/like.png";
+import NotLike from "../../../img/notlike.png";
 
 const Post = ({ data }) => {
   return (

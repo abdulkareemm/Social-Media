@@ -1,5 +1,5 @@
 import React from "react";
-import { PostSide, ProfileSide, RigthSide } from "../components";
+import { PostSide, ProfileSide, RigthSide } from "../components/home";
 
 const Home = () => {
   return (

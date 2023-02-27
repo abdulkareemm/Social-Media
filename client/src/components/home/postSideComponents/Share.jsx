@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Profile from "../../img/profileImg.jpg";
+import Profile from "../../../img/profileImg.jpg";
 import {
   UilScenery,
   UilPlayCircle,
