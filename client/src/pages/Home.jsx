@@ -3,7 +3,7 @@ import { PostSide, ProfileSide, RigthSide } from "../components/home";
 
 const Home = () => {
   return (
-    <div className="flex flex-row gap-[1rem] min-w-full">
+    <div className="flex flex-row gap-[1rem] relative">
       <ProfileSide />
       <PostSide />
       <RigthSide />

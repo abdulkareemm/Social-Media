@@ -2,7 +2,8 @@ import React from "react";
 import Cover from "../../../img/cover.jpg";
 import Profile from "../../../img/profileImg.jpg";
 
-const ProfileCard = () => {
+const ProfileCard = ({ profilePage }) => {
+  console.log(profilePage);
   return (
     <div className="rounded-[1.5rem] flex flex-col relative gap-[1rem] overflow-x-clip bg-cardColor">
       <div className="flex relative items-center justify-center flex-col">
@@ -29,10 +30,28 @@ const ProfileCard = () => {
             <span className="font-bold">1,000</span>
             <span className="text-Gray">Followers</span>
           </div>
+          {profilePage ? (
+            ""
+          ) : (
+            <>
+              {" "}
+              <div className="h-[120%] border-l-[3px] border-hrColor" />
+              <div className="flex flex-col items-center justify-center gap-[0.4rem]">
+                <span className="font-bold">14</span>
+                <span className="text-Gray">Posts</span>
+              </div>
+            </> 
+          )}
         </div>
         <hr className="w-[85%] border-[2px] border-hrColor" />
       </div>
-      <span className="font-bold text-Orange self-center mb-[1rem] cursor-pointer">My Profile</span>
+      {profilePage ? (
+        <span className="font-bold text-Orange self-center mb-[1rem] cursor-pointer">
+          My Profile
+        </span>
+      ) : (
+        <span className=" mb-[1.5rem]"></span>
+      )}
     </div>
   );
 };

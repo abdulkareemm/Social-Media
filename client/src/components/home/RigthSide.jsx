@@ -8,7 +8,7 @@ import { Trend } from "./rightSideComponents";
 
 const RigthSide = () => {
   return (
-    <div className="w-[22rem] flex flex-col gap-[2rem] z-[1]">
+    <div className="w-[22rem] flex flex-col gap-[2rem]">
       <div className="flex flex-row justify-between mt-[1rem] p-1">
         <img
           src={Home}

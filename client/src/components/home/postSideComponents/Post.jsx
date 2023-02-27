@@ -17,7 +17,7 @@ const Post = ({ data }) => {
         <img src={Share} alt="" />
         <img src={Commet} alt="" />
       </div>
-      <span>{data.likes} likes</span>
+      <span className="text-Gray text-[16px]">{data.likes} likes</span>
       <div className="flex gap-[0.70rem]">
         <span>
           <b>{data.name}</b>

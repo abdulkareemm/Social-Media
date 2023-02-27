@@ -5,7 +5,7 @@ const ProfileSide = () => {
   return (
     <div className="w-[20rem] flex flex-col items-center gap-[1rem] overflow-hidden">
       <LogoSearch />
-      <ProfileCard />
+      <ProfileCard profilePage={true}/>
       <FollwersCard />
     </div>
   );
