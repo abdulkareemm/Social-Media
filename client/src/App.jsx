@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { divBlur } from "./utils/CommenCss";
-import { Home, Profile } from "./pages";
+import { Auth, Home, Profile } from "./pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </BrowserRouter>
     </div>
