@@ -1,28 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { UilPen } from "@iconscout/react-unicons";
+import ProfileModal from "../modal/ProfileModal";
 
 const Info = () => {
+  const[modalOpen, setModalOpen] = useState(false);
   return (
     <div className="flex flex-col gap-[0.75rem] bg-cardColor p-[1rem] rounded-[1rem] w-[90%] mb-[2rem]">
       <div className="flex justify-between items-center mb-[2rem]">
         <h4 className="font-bold text-lg">Your info</h4>
-        <UilPen className="w-6 cursor-pointer" />
+        <UilPen className="w-6 cursor-pointer" onClick={()=>setModalOpen(true)}/>
+        <ProfileModal modalOpened={modalOpen} setModalOpen={setModalOpen}/>
       </div>
-      <div >
+      <div>
         <span>
-          <b>Status</b>
+          <b>Status </b>
         </span>
         <span>in Relationship</span>
       </div>
       <div>
         <span>
-          <b>Lives in</b>
+          <b>Lives in </b>
         </span>
         <span>Multan</span>
       </div>
       <div>
         <span>
-          <b>Works at</b>
+          <b>Works at </b>
         </span>
         <span>Shyp</span>
       </div>
